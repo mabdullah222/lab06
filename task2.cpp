@@ -69,3 +69,10 @@ bool testmovIn()
     return movMin(vec1,out);
     
 }
+
+
+int main()
+{   
+    cout<<testmovIn();
+    return 0;
+}
