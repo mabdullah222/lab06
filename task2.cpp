@@ -52,3 +52,20 @@ bool movMin(vector<int> in,vector <int> out)
     return msg;
 }
 
+bool testmovIn()
+{
+    int size;
+    srand(time(0));
+    vector<int> vec1;
+    size=rand()%10000;
+    for (int i=0;i<size;i++)
+    {
+        vec1.push_back(rand()%101);
+    }
+    sort(vec1.begin(),vec1.end());
+    vec1.push_back(rand()%101);
+    vector<int> out=vec1;
+    sort(out.begin(),out.end());
+    return movMin(vec1,out);
+    
+}
